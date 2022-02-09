@@ -4,7 +4,6 @@ import hiber.model.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -26,4 +25,12 @@ public class UserDaoImp implements UserDao {
       return query.getResultList();
    }
 
+   @Override
+   public User getUserHisCar(String model, int series) {
+      User user = (User) sessionFactory.getCurrentSession()
+              .createQuery("FROM User WHERE carsId.model = model"
+                      + " AND carsId.series = " + series)
+              .getSingleResult();
+      return user;
+   }
 }
