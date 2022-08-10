@@ -11,11 +11,6 @@ import javax.persistence.Column;
 @Table(name = "cars")
 public class Car {
 
-    // mbklnklklbngblkbbkgbklgbklgblkgbklgbklmgk
-    // jhgkfbkfnkvfkvnfdkvnfkvnfjknkjfnjkfbjkfn
-    // njkvhjknjkfvkjfvnkjmfvnmkfvnkmfvn
-    // nkgvfdkvfjkvnfkvnfkvnmkfnvkmfnvmf
-    // nvjknfjkvfjkvnfkjvnkfmvnmkfnvkmfnvjf
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

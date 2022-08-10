@@ -14,11 +14,6 @@ import javax.persistence.JoinColumn;
 @Table(name = "users")
 public class User {
 
-   // mbklnklklbngblkbbkgbklgbklgblkgbklgbklmgk
-   // jhgkfbkfnkvfkvnfdkvnfkvnfjknkjfnjkfbjkfn
-   // njkvhjknjkfvkjfvnkjmfvnmkfvnkmfvn
-   // nkgvfdkvfjkvnfkvnfkvnmkfnvkmfnvmf
-   // nvjknfjkvfjkvnfkjvnkfmvnmkfnvkmfnvjf
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    @Column(name = "id")
